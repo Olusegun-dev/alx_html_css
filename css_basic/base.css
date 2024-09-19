@@ -58,11 +58,15 @@ table {
 body {
 	font-family: 'Josefin Sans', serif;
 	color: rgba(0, 0, 0, 0.8);
+	background-color: #4158D0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
 h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
 article {
+	border: 2px solid red;
 }
 header {
 	border-bottom: 1px solid rgb(221,221,221);
@@ -73,6 +77,7 @@ header a {
 }
 aside {
 	background: #FAFAFA;
+	border: 2px solid red;
 }
 aside p {
 	border: 1px solid #bbb;
@@ -152,6 +157,7 @@ aside p {
 footer {
 	padding: 5px 15px;
 	height: 80px;
+	border: 1px solid red;
 }
 
 

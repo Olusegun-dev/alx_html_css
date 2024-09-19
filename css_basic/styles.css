@@ -10,6 +10,10 @@ main {
     flex: auto;
 }
 
+.title {
+    color: rebeccapurple;
+}
+
 article {
     flex: 2;
     overflow-y: auto;
