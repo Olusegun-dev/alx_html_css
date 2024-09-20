@@ -3,6 +3,9 @@ body {
     flex-direction: column;
 }
 
+header {
+    border: 2px solid rebeccapurple;
+}
 
 main {
     display: flex;
@@ -24,4 +27,12 @@ aside {
     flex: 1;
     overflow-y: auto;
     border: 2px solid rebeccapurple;
+}
+
+footer {
+    border: 2px solid rebeccapurple;
+}
+
+li {
+    color: rebeccapurple;
 }
