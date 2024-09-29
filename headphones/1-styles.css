@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Consistent Container Style */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-image: url('images/headphones_hero_1.jpg'); /* Replace with your hero image file name */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    height: 40px; /* Adjust as necessary */
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between navigation links */
+}
+
+header .nav-links li a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* No underline on links */
+    font-size: 1.2rem; /* Font size for links */
+}
+
+header .nav-links li a:hover {
+    color: #FF6565; /* Hover color for links */
+}
+
+header .hero-content {
+    text-align: center;
+    margin-top: 50px; /* Space above hero content */
+}
+
+header h1 {
+    font-size: 3rem; /* Main heading font size */
+    font-weight: bold; /* Bold text */
+}
+
+header p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin: 10px 0; /* Margin above and below paragraph */
+}
+
+.cta-button {
+    background-color: #FF6565; /* Background color for button */
+    color: white; /* Text color for button */
+    border: none; /* No border for button */
+    padding: 15px 30px; /* Padding for button */
+    font-size: 1.2rem; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above button */
+}
+
+.cta-button:hover {
+    opacity: 0.9; /* Slight opacity change on hover */
+}
+
+/* What We Do Section Styles */
+.what-we-do {
+    background-color: #f5f5f5; /* Light background color for section */
+    padding: 50px 0; /* Padding above and below section */
+    text-align: center; /* Center align text */
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 10px; /* Margin below title */
+    color: #333; /* Title color */
+}
+
+.section-description {
+    color: #666; /* Description text color */
+    font-size: 1.2rem; /* Description font size */
+    margin-bottom: 40px; /* Margin below description */
+}
+
+.services {
+    display: flex; /* Flex layout for services */
+    justify-content: space-between; /* Space between services */
+    flex-wrap: wrap; /* Wrap services if they don't fit */
+}
+
+.service {
+    flex: 1; /* Allow each service to grow */
+    margin: 0 15px; /* Margin on left and right */
+    max-width: 250px; /* Max width for each service */
+    text-align: center; /* Center align text in service */
+}
+
+.service-icon {
+    font-size: 3rem; /* Icon size */
+    color: #FF6565; /* Icon color */
+    margin-bottom: 15px; /* Margin below icon */
+}
+
+.service h3 {
+    font-size: 1.5rem; /* Service title font size */
+    color: #333; /* Service title color */
+    margin-bottom: 10px; /* Margin below service title */
+}
+
+.service p {
+    color: #666; /* Paragraph color */
+    font-size: 1rem; /* Paragraph font size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center; /* Center align services */
+    }
+
+    .service {
+        margin-bottom: 30px; /* Margin below each service */
+    }
+}

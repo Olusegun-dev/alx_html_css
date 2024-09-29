@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the nav links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF6565; /* Change color on hover */
+}
+
+.cta-button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+    background: #F9F9F9;
+    padding: 40px 0;
+    text-align: center; /* Center text in section */
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Our Results Section */
+.our-results {
+    background: url('images/headphones_hero_2.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 0;
+    text-align: center; /* Center text in section */
+}
+
+.pentagons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.pentagon {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pentagon:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Us Section */
+.contact-us {
+    background: #F9F9F9;
+    padding: 40px 0;
+    text-align: center; /* Center text in section */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 300px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a {
+    color: white;
+}
+
+/* Animations */
+.service {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px) scale(1.05);
+    opacity: 1;
+}
+
+.pentagon {
+    transition: transform 0.3s;
+}
+
+.pentagon:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack services vertically on small screens */
+        align-items: center;
+    }
+
+    .service {
+        flex: none; /* Remove flex-grow */
+        margin-bottom: 20px; /* Add spacing between stacked services */
+    }
+}
+

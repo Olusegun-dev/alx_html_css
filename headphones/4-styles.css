@@ -1,0 +1,231 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section Styles */
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover; /* Replace with your image */
+    color: white;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust logo height */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6565; /* Change on hover */
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4c4c; /* Darker shade on hover */
+}
+
+/* What We Do Section Styles */
+.what-we-do {
+    background-color: #f9f9f9; /* Light background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    max-width: 200px;
+}
+
+.service-icon {
+    font-size: 3rem; /* Adjust icon size */
+}
+
+/* Our Results Section Styles */
+.our-results {
+    background: url('images/headphones_hero_2.jpg') no-repeat center center/cover; /* Replace with your image */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.results-description {
+    margin-bottom: 30px;
+}
+
+.results-pentagons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pentagon {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light white background */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.pentagon-value {
+    font-size: 1.5rem; /* Adjust value font size */
+}
+
+.pentagon-text {
+    font-size: 0.8rem; /* Smaller text size */
+}
+
+/* Contact Us Section Styles */
+.contact-us {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff4c4c; /* Darker shade on hover */
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: rgb(67, 64, 64); /* Black background for footer */
+    color: white; /* Text color in footer */
+    padding: 20px 0; /* Padding for the footer */
+}
+
+.footer-logo {
+    height: 40px; /* Adjust logo height */
+}
+
+.social-media {
+    display: flex; /* Flex layout for social media icons */
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 20px; /* Space between icons */
+}
+
+.social-media a {
+    color: white; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* No underline on links */
+}
+
+.social-media a:hover {
+    color: #FF6565; /* Hover color for icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack services vertically on small screens */
+    }
+
+    .results-pentagons {
+        flex-direction: column; /* Stack pentagons vertically on small screens */
+    }
+}
+
